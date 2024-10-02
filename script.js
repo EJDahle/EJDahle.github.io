@@ -33,8 +33,8 @@ class Game {
     constructor(white, black, wPoints, bPoints) {
         white.Points += wPoints;
         black.Points += bPoints;
-        gameText += `<td>${white.Name} (Hvit)</td>`;
-        gameText += `<td>${black.Name} (Svart)</td>`;
+        gameText += `<td style="background-color:white; color:#888888;">${white.Name}</td>`;
+        gameText += `<td style="background-color:black; color:#888888;">${black.Name}</td>`;
         gameText += `<td>${wPoints} - ${bPoints}</td></tr>`;
     }
 }
